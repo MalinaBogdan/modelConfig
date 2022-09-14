@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ql-container.ql-snow, .ql-toolbar.ql-snow {
+  border: none;
+}
+
+.ql-toolbar.ql-snow {
+  position: absolute;
+  bottom: 100%;
+  border-bottom: 1px black solid;
+  display: none;
+}
+
+.active-edit .ql-toolbar.ql-snow {
+  display: block;
+}
