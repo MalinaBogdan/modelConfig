@@ -113,7 +113,6 @@ import leatherTexturePath from "@/assets/img/leather_baseColor.jpg";
 import fabricTexturePath from "@/assets/img/fabric_baseColor.jpg";
 import denimTexturePath from "@/assets/img/denim_baseColor.jpg";
 
-import metallOcclusionPath from "@/assets/img/metall_occlusion.jpg";
 import leatherOcclusionPath from "@/assets/img/leather_occlusion.jpg";
 import fabricOcclusionPath from "@/assets/img/fabric_occlusion.jpg";
 import denimOcclusionPath from "@/assets/img/denim_occlusion.jpg";
@@ -174,7 +173,7 @@ const materials = [
   },
 ];
 
-let sceneSize = { width: 400, height: 600 };
+let sceneSize = { width: window.innerWidth, height: window.innerHeight };
 
 scene = new THREE.Scene();
 
@@ -332,6 +331,14 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 500px) {
+  .content {
+    height: 300px;
+    width: 300px;
+    margin: 20px auto;
+  }
 }
 
 .popup {
