@@ -8,8 +8,14 @@
   },
   "dependencies": {
     "@vueup/vue-quill": "^1.0.0-beta.10",
+    "axios": "^1.2.0",
+    "qrcode": "^1.5.4",
+    "qrcode.vue": "^3.4.1",
+    "three": "^0.167.1",
     "vue": "^3.2.38",
+    "vue-axios": "^3.5.2",
     "vue-router": "^4.1.5",
+    "vue3-google-login": "^2.0.12",
     "vuex": "^4.0.2"
   },
   "devDependencies": {

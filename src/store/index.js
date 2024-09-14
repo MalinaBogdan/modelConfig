@@ -4,13 +4,7 @@ export default createStore({
   state: {
     horizOrientation: null,
   },
-  getters: {
-    isHorizOrientation: (state) => state.horizOrientation,
-  },
+  getters: {},
   actions: {},
-  mutations: {
-    checkHorizOrientation(state, bool) {
-      return (state.horizOrientation = bool);
-    },
-  },
+  mutations: {},
 });

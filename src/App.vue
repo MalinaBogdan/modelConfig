@@ -1,30 +1,25 @@
+<template>
+  <ModelConfig></ModelConfig>
+</template>
+
 <script>
-import { RouterLink, RouterView } from "vue-router";
-import Notebook from "./components/Notebook.vue";
+import ModelConfig from "./components/ModelConfig.vue";
 
 export default {
-  created() {
-    window.addEventListener("resize", this.resize);
-  },
-  destroyed() {
-    window.removeEventListener("resize", this.resize);
-  },
-  methods: {
-    resize(e) {
-      this.$store.commit(
-        "checkHorizOrientation",
-        window.screen.height < window.screen.width
-      );
-    },
-  },
-  components: {
-    Notebook,
-  },
+  components: { ModelConfig },
+  created() {},
+  destroyed() {},
+  methods: {},
+  setup() {},
 };
 </script>
 
-<template>
-  <Notebook />
-</template>
-
-<style scoped lang="scss"></style>
+<style  lang="scss">
+body,
+#app {
+  font-family: "Arial";
+}
+#app {
+  padding-bottom: 50px;
+}
+</style>
