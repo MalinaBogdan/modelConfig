@@ -173,7 +173,10 @@ const materials = [
   },
 ];
 
-let sceneSize = { width: window.innerWidth, height: window.innerHeight };
+let sceneSize = {
+  width: window.screen.width > 500 ? 400 : 200,
+  height: window.screen.width > 500 ? 600 : 300,
+};
 
 scene = new THREE.Scene();
 
